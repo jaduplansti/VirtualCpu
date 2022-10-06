@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 FILE *src;
 int Memory[255];
@@ -100,6 +101,14 @@ int Operand_Do(int Operand1,int Operand2)
 	Operand1 = Operand2;
 	Cur_Stat.Move = 0;
     }
-
+    Cur_Flag.ip++;
 }
+
+int* Initialize_Mem()
+{
+        Cur_Flag.ip = 0;
+        memset(Memory,'0',255);
+        return &Memory[0];
+}
+
 
