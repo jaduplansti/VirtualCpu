@@ -10,7 +10,7 @@ a2 is the Mode Register, Mode Switching Switches Instructions For A Opcode
 For example In Mode 0 0x01 Is Move cx,num /15 In Mode 1 0x01 Becomes Move cx,dx
 
 Interrupt List:
-0x00 Exits Normall
+0x00 Exits Normal
 0x01 Displays A Integer From dx
 0x02 Switches To Protected Mode
 0x03 Mode Switch
