@@ -1,4 +1,4 @@
-The 0z3Cpu.h
+The 0z3Cpu
 Registers:
 	cdx, (0x0)
 	adx, (0x1)
