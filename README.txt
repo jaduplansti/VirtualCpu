@@ -1,6 +1,6 @@
 The 0z2Cpu
 Has 4 Registers in Total
-3 of them are general purpose which is cx , dx and ax 
+4 of them are general purpose which is cx , dx , ax and bx
 the other 2 are special registers called
 a1 and a2
 
@@ -13,8 +13,9 @@ Interrupt List:
 0x00 Exits Normal
 0x01 Displays A Integer From dx
 0x02 Switches To Protected Mode
-0x03 Mode Switch
-0x04 Disable Interrupts
+0x03 Mode Switch 
+0x04 Disable Interrupts	
+0x05 Use Register bx
 
 Modes:
 0x00:Arithemetic
@@ -28,9 +29,21 @@ All OpCodes:
 0x05 Subtracts cx To dx And Stores The Result in cx
 0x06 Multiplies cx To dx And Stores The Result in cx
 0x07 Divides cx To dx And Stores The Result in cx
-0x08 Interrupts The Cpu
+0x09 Interrupts The Cpu
 
 0x00 Resets a2
 0x01 Moves dx To cx
 0x02 Moves cx To dx
-0x09 Interruots The Cpu
+0x09 Interrupts The Cpu
+
+Whats New?:
+0z2Cpu Is Much More Optimized Than The First Counter Part 0z1Cpu.
+
+It Has More Registers But No Flags
+Memory Access Is Much More Simplified
+More Opcodes And Less Buggy 
+Better Input
+More Interrupts
+Better Arithemetic 
+Less Code
+
