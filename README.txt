@@ -1,3 +1,59 @@
+The 0z3Cpu.h
+Registers:
+	cdx, (0x0)
+	adx, (0x1)
+	acx, (0x2)
+	a1, Special Register 1 (0x3)
+	a2,	Special Register 2 (0x4)
+	a3, Switcher(0x5)
+	asp, This is The Special Stack Pointer Register (0x6)
+Interrupts:
+	Not Done
+	
+Flags:
+	zf, The Zero Flag Is Set Conditionally
+	nf, This Flag Is Set When A Exception Happens
+
+Prefix:
+ val, This Tells The Cpu That A Constant Value Will An Arguement
+ addr, Specified Address
+ 
+Instructions:
+	mov, Moves A Value Into A Register It Can Be Either A Constant Or A Register(0x0)
+	cmp, Compares Either A Register To A Register Or A Register To A Constant Value And Sets The Zero Flag Conditionally(0x1)
+	jmp, Not Added Yet
+	add, Adds Either cdx,adx,acx,a1 To cdx and Stores The Result To cdx [add adx](0x3)
+	sub, Same As Above(0x4)
+	mul, (0x5)
+	idiv, (0x6)
+	
+Examples:
+[Prefix][Instruction][Register][Register/Constant] 
+1004: mov cdx,4
+1012: mov adx,2
+031:  add,adx
+0021  mov adx,cdx (adx = 6)
+
+Whats New:
+Better Instructions
+Faster And Buggier Registers
+No Mode Switching 
+Better Arithematic 
+More Code
+More Easier To Understand
+No Input
+
+
+
+
+
+
+
+
+
+
+
+
 The 0z2Cpu
 Has 4 Registers in Total
 4 of them are general purpose which is cx , dx , ax and bx
