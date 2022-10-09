@@ -1,3 +1,62 @@
+the 0z3Cpu
+Registers:
+ex, (0x0)
+dx, (0x1)
+bx, (0x2)
+aex,(0x3)
+adx,(0x4)
+abx,(0x5)
+zx1,(0x6)
+zx2,(0x7)
+zx3,(0x8)
+
+Interrupts:
+Still In Progress
+
+Flags:
+zf, Zero Flag
+nf, NULL Flag
+
+Prefix:
+none, None
+val, Specifies If An Arguement Is Gonna Be A Constant
+addr, Specifies And Address
+
+Instructions:
+mov, Moves A Register Or A Constant To A Destination(1st Arg)
+movp, Promotes A Register 16 bit to 32 bit
+movf, Moves A Float Or A Register To The Destination(1st Arg)
+cmp, Compares A Constant Or A Register To A Register
+ld,  Links 2 Registers 
+
+Features:
+Dual Core (Experimental)
+Improved Instructions(I Assure That It Was Not Copy And Paste)
+Optimized Source Code(Yes)
+Better Arithematic(Not Yet Added)
+Built In Assembler
+Virtual Hardware (Such As Virtual Ram And Virtual Drive & Vga)
+Special Registers And Float Registers
+
+Whats New:
+Dual Core:
+Basically Seperates Each Instruction And Passes It To One Of The Cores And Then Decode
+ld Instruction:
+It Links To Registers, For Example ld aex,adx 
+This Makes aex == adx If You Try To Change The Value Of Any Of The Linked Registers The Value Will Not Change
+so
+mov aex,5
+ld aex,adx This Makes aex == edx
+mov adx,9 Value Of adx Will Still Be 5 Unless You Unlink Them
+
+	
+
+
+
+
+
+
+
 The 0z3Cpu
 Registers:
 	cdx, (0x0)
